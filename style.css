@@ -1,6 +1,6 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f4f4;
+  background-color: #fff0ff; /* Light background for readability */
   color: #333;
   padding: 40px;
   text-align: center;
@@ -9,6 +9,7 @@ body {
 h1 {
   font-size: 2em;
   margin-bottom: 20px;
+  color: #4b004b; /* Darker purple for headings */
 }
 
 .button-container {
@@ -19,36 +20,46 @@ h1 {
   display: inline-block;
   margin: 10px;
   padding: 14px 28px;
-  background-color: #007BFF;
-  color: white;
+  background-color: #FFBBFF;
+  color: #4b004b;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 16px;
-  transition: 0.3s;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .nav-button:hover {
-  background-color: #0056b3;
+  background-color: #ff99ff;
+  transform: translateY(-2px);
 }
 
 p {
   max-width: 800px;
   margin: 0 auto 20px;
   text-align: left;
-  line-height: 1.6;
-  font-size: 1.1em;
+  line-height: 1.7;
+  font-size: 1.15em;
+  background-color: #ffe6ff;
+  padding: 20px;
+  border-radius: 10px;
+  color: #4b004b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .back-button {
   display: inline-block;
   margin-top: 30px;
-  padding: 10px 20px;
-  background-color: #555;
-  color: #fff;
+  padding: 12px 24px;
+  background-color: #FFBBFF;
+  color: #4b004b;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 .back-button:hover {
-  background-color: #333;
+  background-color: #ff99ff;
 }
