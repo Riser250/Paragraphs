@@ -1,65 +1,61 @@
+/* Base layout */
 body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFBBFF;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #fff0ff; /* Light background for readability */
-  color: #333;
-  padding: 40px;
+  color: #4b004b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
   text-align: center;
 }
 
+/* Headings */
 h1 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  color: #4b004b; /* Darker purple for headings */
-}
-
-.button-container {
-  margin-top: 30px;
-}
-
-.nav-button {
-  display: inline-block;
-  margin: 10px;
-  padding: 14px 28px;
-  background-color: #FFBBFF;
+  font-size: 2.5em;
+  margin-bottom: 40px;
   color: #4b004b;
-  text-decoration: none;
+}
+
+/* Buttons */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav-button, .back-button {
+  background-color: white;
+  color: #4b004b;
+  border: 2px solid #4b004b;
   border-radius: 10px;
-  font-size: 16px;
+  padding: 15px 30px;
+  font-size: 1.2em;
   font-weight: bold;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
-  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-decoration: none;
+  width: 240px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.nav-button:hover {
-  background-color: #ff99ff;
-  transform: translateY(-2px);
+.nav-button:hover, .back-button:hover {
+  background-color: #ffe6ff;
+  transform: scale(1.05);
 }
 
+/* Paragraph content */
 p {
   max-width: 800px;
-  margin: 0 auto 20px;
-  text-align: left;
-  line-height: 1.7;
-  font-size: 1.15em;
+  margin: 10px auto;
   background-color: #ffe6ff;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-size: 1.1em;
+  line-height: 1.7;
   color: #4b004b;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-}
-
-.back-button {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 12px 24px;
-  background-color: #FFBBFF;
-  color: #4b004b;
-  text-decoration: none;
-  border-radius: 10px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.back-button:hover {
-  background-color: #ff99ff;
 }
